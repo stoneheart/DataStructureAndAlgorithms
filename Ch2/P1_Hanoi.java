@@ -1,4 +1,4 @@
-public class Hanoi {
+public class P1_Hanoi {
     public static void TowersOfHanoi(int n, char frompeg, char topeg, char auxpeg) {
         /* If only 1 disk, make the move and return */
         if (n==1) {
@@ -18,6 +18,6 @@ public class Hanoi {
 
     public static void main(String[] args) {
         int h = Integer.parseInt(args[0]);
-        Hanoi.TowersOfHanoi(h, 'A', 'C', 'B');
+        P1_Hanoi.TowersOfHanoi(h, 'A', 'C', 'B');
     }
 }
