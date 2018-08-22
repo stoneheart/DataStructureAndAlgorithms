@@ -1,5 +1,5 @@
 public class P1_Hanoi {
-    public static void TowersOfHanoi(int n, char frompeg, char topeg, char auxpeg) {
+    public void TowersOfHanoi(int n, char frompeg, char topeg, char auxpeg) {
         /* If only 1 disk, make the move and return */
         if (n==1) {
             System.out.println("Move disk 1 from peg " + frompeg + " to peg " + topeg);
@@ -18,6 +18,7 @@ public class P1_Hanoi {
 
     public static void main(String[] args) {
         int h = Integer.parseInt(args[0]);
-        P1_Hanoi.TowersOfHanoi(h, 'A', 'C', 'B');
+        P1_Hanoi p = new P1_Hanoi();
+        p.TowersOfHanoi(h, 'A', 'C', 'B');
     }
 }
